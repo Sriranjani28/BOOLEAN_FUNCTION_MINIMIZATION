@@ -34,17 +34,28 @@ Hardware – PCs, Cyclone II , USB flasher
 **Program:**
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+module ha_dataflow(a, b, s, ca); 
+    input a; 
+    input b; 
+    output s; 
+    output ca; 
+  assign#2 s=a^b; 
+  assign#2 ca=a&b;
+  endmodule
 
-Developed by: RegisterNumber:*/
-
+Developed by:Sriranjani.M
+RegisterNumber:24900016
 
 **RTL realization**
+<img width="673" alt="ex 2" src="https://github.com/user-attachments/assets/d532bd93-b0a5-4b35-9900-14fa4adcd809" />
 
-**Output:**
-
-**RTL**
 
 **Timing Diagram**
+<img width="632" alt="ex 2 timing diagram" src="https://github.com/user-attachments/assets/fd06f508-8b54-4062-8ac8-b27d21f7f9af" />
+
+**Output:**
+Hence we have implemented the given logic function and verified its operation in Quartus using Verilog programming.
+
 
 **Result:**
 
